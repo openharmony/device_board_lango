@@ -1,0 +1,4 @@
+config BOARD_DEV_WIFI_A
+    bool "select board DEV_WIFI_A"
+    depends on SOC_ASR5822S
+

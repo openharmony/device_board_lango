@@ -1,0 +1,7 @@
+if BOARD_DEV_WIFI_A
+config BOARD
+    string
+    default "DEV.WIFI.A"
+
+endif #BOARD_DEV_WIFI_A
+
