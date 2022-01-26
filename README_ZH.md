@@ -24,7 +24,7 @@
 | 红外接收器   | 预留VS1838B 红外解码器接口 (2.54mm排座)                             |
 | OLED         | 预留一个4脚IIC OLED屏接口 (2.54mm排座)                              |
 | LED          | 板载一个电源指示灯：LED1 ；和一个可编程led灯：LED3                  |
-| GIPIO        | 13个GPIO 通过排针引出 与其它外设复用，可通过跳帽选择。              |
+| GPIO        | 13个GPIO 通过排针引出 与其它外设复用，可通过跳帽选择。              |
 | 按键         | 1个复位按键；1个可编程按键                                          |
 | USB转串口    | 板载ch340串口芯片                                                   |
 | 电源输入     | USB-C ; 输入电压5V ；工作电压3.3V                                   |
@@ -34,7 +34,7 @@
 
 | 组件名       | 能力介绍                                                                                       |
 | -------------- | ------------------------------------------------------------------------------------------------ |
-| 内核         | lite os                                                                                        |
+| 内核         | LiteOS-M                                                                                        |
 | 上电启动     | 上电启动OpenHarmonyOS                                                                          |
 | WLAN服务     | 提供WLAN服务能力。包括：station和hotspot模式的连接、断开、状态查询等                           |
 | BLE服务      | 提供BLE服务能力。包括：开启/关闭广播、发送/接收数据等                                          |
@@ -52,7 +52,7 @@
 
 ### 1. 环境搭建与编译
 
-参考：[环境搭建与编译](https://gitee.com/openharmony-sig/device_asrmicro#%E7%BC%96%E8%AF%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA)
+参考：[环境搭建与编译](https://gitee.com/openharmony-sig/device_soc_asrmicro#%E7%BC%96%E8%AF%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA)
 
 ### 2. 开发板与PC连接
 
@@ -65,7 +65,7 @@
 
 ### 4. 固件烧录
 
-参考： [烧录流程](https://gitee.com/openharmony-sig/device_asrmicro#%E7%83%A7%E5%BD%95%E6%B5%81%E7%A8%8B)
+参考： [烧录流程](https://gitee.com/openharmony-sig/device_soc_asrmicro#%E7%83%A7%E5%BD%95%E6%B5%81%E7%A8%8B)
 
 ### 5. 退出烧录模式 (进入Flash boot 模式)
 
