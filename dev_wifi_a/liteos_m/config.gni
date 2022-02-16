@@ -72,12 +72,14 @@ board_cflags = [
     "-Wno-unused-label",
     "-DDUET_CM4",
     "-D__FPU_PRESENT=1",
-    "-D__FPU_USED=1",
+    #"-D__FPU_USED=1",
     #"-DLWIP_2_1_2",
     #"-DLWIP_DHCP",
     #"-D_POSIX_SOURCE",
     #"-D_GNU_SOURCE=1",
     "-D__LITEOS_M__",
+    #"-Wno-unused-parameter",
+    #"-Wno-sign-compare",
      ]
 board_cxx_flags = [ "-mfloat-abi=softfp" ]
 board_ld_flags = [
