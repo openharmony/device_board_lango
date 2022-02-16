@@ -31,7 +31,8 @@ board_toolchain = "arm-none-eabi"
 #use_board_toolchain = true
 
 # The toolchain path instatlled, it's not mandatory if you have added toolchian path to your ~/.bashrc.
-board_toolchain_path = rebase_path("//device/soc/asrmicro/gcc/gcc-arm-none-eabi/Linux64/bin")
+# board_toolchain_path = rebase_path("//device/soc/asrmicro/gcc/gcc-arm-none-eabi/Linux64/bin")
+board_toolchain_path = ""
 
 # Compiler prefix.
 board_toolchain_prefix = "arm-none-eabi-"
