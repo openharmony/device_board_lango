@@ -25,6 +25,11 @@
                 <policyitem type="copyright" name="Copyright (c) 2022 ASR Microelectronics (Shanghai) Co., Ltd. All rights reserved." path=".*" desc="original asrmicro copyright"/>
                 <policyitem type="license" name="Apache" path=".*" desc="asrmicro use apache 2.0 license"/>
             </policy>
-        </policylist>
+    </policylist>
+    <filefilterlist>
+	<filefilter name="defaultFilter" desc="Filters for binaryFile" >
+		<filteritem type="filename" name="*.png" desc="all png not to check "/>
+        </filefilter>
+    </filefilterlist>
     </oatconfig>
 </configuration>
