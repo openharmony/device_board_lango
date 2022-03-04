@@ -45,6 +45,7 @@ if (product_path != "") {
   product_conf = read_file("${product_path}/config.json", "json")
   product_name = product_conf.product_name
   xts_list = product_conf.xts_list
+  tests_list = product_conf.tests_list
 }
 
 # Board related common compile flags.
@@ -78,11 +79,16 @@ board_cflags = [
     #"-DLWIP_DHCP",
     #"-D_POSIX_SOURCE",
     #"-D_GNU_SOURCE=1",
+    "-DCFG_NAN_CONFIG",
     "-D__LITEOS_M__",
-    #"-Wno-unused-parameter",
-    #"-Wno-sign-compare",
+    "-Wno-unused-parameter",
+    "-Wno-sign-compare",
+    "-Wno-parentheses",
+    "-Wno-cast-function-type",
      ]
-board_cxx_flags = [ "-mfloat-abi=softfp" ]
+
+board_cxx_flags = board_cflags
+
 board_ld_flags = [
     "-mcpu=cortex-m4",
     "-mthumb",
@@ -115,9 +121,10 @@ board_include_dirs = [
     "//device/soc/asrmicro/asr582x/liteos_m/sdk/drivers/kv/include/",
     "//device/soc/asrmicro/asr582x/liteos_m/sdk/drivers/driver/inc/",
     "//device/soc/asrmicro/asr582x/liteos_m/sdk/drivers/common/",
+    "//device/soc/asrmicro/asr582x/liteos_m/sdk/drivers/include/",
+    "//device/soc/asrmicro/asr582x/liteos_m/sdk/drivers/iperf/",
+    "//device/soc/asrmicro/asr582x/liteos_m/sdk/config/",
     "//device/soc/asrmicro/asr582x/liteos_m/sdk/liteos_m/",
-    "//device/soc/asrmicro/asr582x/liteos_m/sdk/lwip/include/",
-    "//device/soc/asrmicro/asr582x/liteos_m/sdk/lwip/port/include/",
     "//kernel/liteos_m/kernel/arch/arm/cortex-m4/gcc/",
     "//kernel/liteos_m/kernel/arch/include/",
     "//kernel/liteos_m/utils/",
@@ -133,8 +140,6 @@ board_include_dirs = [
     "//third_party/openssl/include",
     "//third_party/openssl/crypto/include",
     "//third_party/openssl/crypto/ec",
-    "//third_party/musl/porting/liteos_m/kernel/include",
-    "//third_party/musl/porting/liteos_m/kernel/src/internal",
 ]
 board_include_dirs += []
 
