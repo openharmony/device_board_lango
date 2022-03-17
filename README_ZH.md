@@ -52,7 +52,7 @@
 
 ### 1. 环境搭建与编译
 
-参考：[环境搭建与编译](https://gitee.com/openharmony-sig/device_soc_asrmicro#%E7%BC%96%E8%AF%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA)
+参考：[环境搭建与编译](https://gitee.com/openharmony/device_soc_asrmicro#%E7%BC%96%E8%AF%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA)
 
 ### 2. 开发板与PC连接
 
@@ -65,7 +65,7 @@
 
 ### 4. 固件烧录
 
-参考： [烧录流程](https://gitee.com/openharmony-sig/device_soc_asrmicro#%E7%83%A7%E5%BD%95%E6%B5%81%E7%A8%8B)
+参考： [烧录流程](https://gitee.com/openharmony/device_soc_asrmicro#%E7%83%A7%E5%BD%95%E6%B5%81%E7%A8%8B)
 
 ### 5. 退出烧录模式 (进入Flash boot 模式)
 
@@ -73,4 +73,4 @@
 
 ## 联系
 
-如果您在开发过程中有问题，请在仓库[issues](https://gitee.com/openharmony-sig/device_board_lango/issues/new?issue%5Bassignee_id%5D=0&issue%5Bmilestone_id%5D=0)提问。
+如果您在开发过程中有问题，请在仓库[issues](https://gitee.com/openharmony/device_board_lango/issues/new?issue%5Bassignee_id%5D=0&issue%5Bmilestone_id%5D=0)提问。
