@@ -10,7 +10,7 @@ root {
             pinNum = 2;
         }
         controller_uart0 :: uart_controller {
-            match_attr = "goodix_gr55xx_uart_0";
+            match_attr = "asrmicro_asr582x_gpio";
             id = 0;                         /* APP_UART_ID_0 */
             baudrate = 115200;
             pin_tx_type = 0;                /* APP_IO_TYPE_NORMAL */
